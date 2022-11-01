@@ -940,13 +940,18 @@ textarea::placeholder {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
+  /* position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; */
 }
-/* .form-checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-} */
+
 .check-link {
   color: var(--navigation-color);
   margin-left: 4px;
@@ -964,7 +969,6 @@ textarea::placeholder {
   border-radius: 4px;
   margin-right: 7px;
 }
-
 .check-form:checked + .icon-check {
   background-color: var(--navigation-color);
   background-image: url("../images/icon.svg/check.svg");
